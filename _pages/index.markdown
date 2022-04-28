@@ -1,5 +1,6 @@
 ---
 layout: splash
+permalink: /
 excerpt: "I am cool guy"
 header:
   overlay_color: "#333"
