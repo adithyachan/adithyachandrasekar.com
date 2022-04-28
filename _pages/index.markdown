@@ -1,9 +1,6 @@
 ---
-layout: splash
-permalink: /
-excerpt: "I am cool guy"
-header:
-  overlay_color: "#333"
+layout: home
+author_profile: true
 ---
 
-Hi, its a me mario
+
