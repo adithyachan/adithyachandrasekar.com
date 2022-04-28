@@ -32,7 +32,7 @@ github_username:  jekyll
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
-  - jekyll-cache
+  - jekyll-include-cache
 
 # Exclude from processing.
 # The following items will not be processed, by default.
