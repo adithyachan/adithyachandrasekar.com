@@ -130,7 +130,7 @@ author:
     #   # url: "https://instagram.com/"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin-in"
-      url: "https://www.linkedin.com/in/adithya-chandrasekar-73233416a/"
+      url: "https://www.linkedin.com/in/adithya-chandrasekar/"
 
 # Site Footer
 footer:
@@ -161,7 +161,7 @@ footer:
       url: "mailto:adithya.chandrasekar@gmail.com"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin-in"
-      url: "https://www.linkedin.com/in/adithya-chandrasekar-73233416a/"
+      url: "https://www.linkedin.com/in/adithya-chandrasekar/"
 
 
 # Reading Files
