@@ -1,7 +1,7 @@
 ---
 layout: splash
 permalink: /
-title: <br><br><center><h1>Who Am I?</h1></center><br><br>
+title: <br><br><center>#Who Am I?</center><br><br>
 header:
   overlay_image: assets/images/beach-splash-1.png
   overlay_filter: 0.5
@@ -15,7 +15,7 @@ feature_row3:
   - image_path: /assets/images/osu.jpg
     alt: "Image of popular game osu"
     title: "Gamr"
-    excerpt: "I play the video games yes. Some of my favorites include [osu!](https://osu.ppy.sh/home) (featured above) and [Realm of the Mad God](https://www.realmofthemadgod.com) (death grind). I am also a big fan of TCGs like Magic: The Gathering and Flesh and Blood as well!"
+    excerpt: "I play the video games yes. Some of my favorites include [osu!](https://osu.ppy.sh/home) (featured to left) and [Realm of the Mad God](https://www.realmofthemadgod.com) (death grind). I am also a big fan of TCGs like Magic: The Gathering and Flesh and Blood as well!"
 feature_row2:
   - image_path: /assets/images/stonks.jpg
     alt: "Image of popular stonks meme"
