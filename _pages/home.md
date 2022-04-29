@@ -6,7 +6,7 @@ header:
   overlay_image: assets/images/beach-splash-1.png
   overlay_filter: 0.5
   caption: "Adithya Chandrasekar"
-feature_row1:
+feature_row:
   - image_path: /assets/images/coding.jpg
     alt: "Image of code from a program"
     title: "CS Nerd"
