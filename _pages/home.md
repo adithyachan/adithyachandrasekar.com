@@ -1,7 +1,7 @@
 ---
 layout: splash
 permalink: /
-title: <br><br><center>#Who Am I?</center><br><br>
+title: <br><br><center>Who Am I?</center><br><br>
 header:
   overlay_image: assets/images/beach-splash-1.png
   overlay_filter: 0.5
