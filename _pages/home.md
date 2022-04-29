@@ -10,7 +10,7 @@ feature_row:
   - image_path: /assets/images/coding.jpeg
     title: "CS Nerd"
     excerpt: "Your run of the mill comp sci student who shits on business majors *(ew)* and has too big of an ego. Kinda decent at Python, C, Java, Golang, React.js, idk look at my resume I forgot."
-  - image_path: /assets/images/stonks-meme.jpeg
+  - image_path: /assets/images/stonks-memes.jpeg
     title: "Investing"
     excerpt: "*Wow, another crypto miner!* **Wrong.** I am actually more interested in long term investment and portfolio management fyi. I also find more unique asset classes like collectibles to be a lot more fascinating. Big shoutout to Rudy from <a href="https://www.youtube.com/c/AlphaInvestments69" target="_blank">Alpha Investments</a> for getting me interested!"
   - image_path: /assets/images/osu.jpeg
