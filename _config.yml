@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "aqua" #"default", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 title                    : "Adithya Chandrasekar"
 title_separator          : "|"
-subtitle                 : 
+subtitle                 : "CS Nerd Extraordinaire"
 name                     : "Adithya Chandrasekar"
 description              : "The personal blog of Adithya Chandrasekar"
 url                      : "https://adithyachan.github.io/"
