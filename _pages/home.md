@@ -15,7 +15,7 @@ feature_row3:
   - image_path: /assets/images/osu.jpg
     alt: "Image of popular game osu"
     title: "Gamr"
-    excerpt: "I play the video games yes. Some of my favorites include <a href="https://osu.ppy.sh/home" target="_blank">osu!</a> (featured above) and <a href="https://www.realmofthemadgod.com/" target="_blank">Realm of the Mad God</a> (death grind). I am also a big fan of TCGs like Magic: The Gathering and Flesh and Blood as well!"
+    excerpt: "I play the video games yes. Some of my favorites include [osu!](https://osu.ppy.sh/home) (featured above) and [Realm of the Mad God](https://www.realmofthemadgod.com) (death grind). I am also a big fan of TCGs like Magic: The Gathering and Flesh and Blood as well!"
 feature_row2:
   - image_path: /assets/images/stonks.jpg
     alt: "Image of popular stonks meme"
