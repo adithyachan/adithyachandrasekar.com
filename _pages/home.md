@@ -20,7 +20,7 @@ feature_row2:
   - image_path: /assets/images/stonks.jpg
     alt: "Image of popular stonks meme"
     title: "Investing"
-    excerpt: "*Wow, another crypto miner!* **Wrong.** I am actually more interested in long term investment and portfolio management fyi. I also find more unique asset classes like collectibles to be a lot more fascinating. Big shoutout to Rudy from <a href="https://www.youtube.com/c/AlphaInvestments69" target="_blank">Alpha Investments</a> for getting me interested!"
+    excerpt: "*Wow, another crypto miner!* **Wrong.** I am actually more interested in long term investment and portfolio management fyi. I also find more unique asset classes like collectibles to be a lot more fascinating. Big shoutout to Rudy from [Alpha Investments](https://www.youtube.com/c/AlphaInvestments69) for getting me interested!"
 ---
 
 {% include feature_row id="feature_row1" type="left" %}
