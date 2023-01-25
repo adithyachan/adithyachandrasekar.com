@@ -11,9 +11,8 @@ import {
   Collapse,
   MediaQuery,
   Stack,
-  Divider,
 } from '@mantine/core';
-import { useDisclosure, useScrollIntoView } from '@mantine/hooks';
+import { useDisclosure, useWindowScroll, useIdle } from '@mantine/hooks';
 import { IconChevronDown, IconSun, IconMoonStars, IconBrandGithub, IconBrandInstagram, IconBrandLinkedin } from '@tabler/icons';
 
 const useStyles = createStyles((theme) => ({
@@ -123,9 +122,11 @@ export function HeaderTemplate({ links }: HeaderActionProps) {
 
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
   const dark = colorScheme === 'dark';
+  const [scroll, scrollTo] = useWindowScroll();
+  const idle = useIdle(1000);
 
   return (
-    <Header height="" p="md" opacity={opened ? 1 : 0.9} className="sm:hover:opacity-100 shadow-lg transition ease-in-out sm:hover:scale-105 sm:hover:shadow-2xl" fixed>
+    <Header height="" p="md" className={`shadow-lg transition ease-in-out sm:hover:opacity-100 sm:hover:shadow-2xl ${scroll.y > 150 && !idle ? "opacity-90" : "opacity-0"} duration-500`} fixed>
       <Container className="flex justify-between items-center" fluid>
         <Group className="pl-5">
           <Group>
@@ -142,6 +143,7 @@ export function HeaderTemplate({ links }: HeaderActionProps) {
             target="_blank"
             variant="subtle"
             title="Adithya Chandrasekar's Github"
+            className='transition ease-in-out delay-10 hover:-translate-y-0.5 hover:scale-105 duration-300 hover:shadow-xl'
           >
             <IconBrandGithub size={24} />
           </ActionIcon>
@@ -152,6 +154,7 @@ export function HeaderTemplate({ links }: HeaderActionProps) {
             variant="subtle"
             color='pink.3'
             title="Adithya Chandrasekar's Instagram"
+            className='transition ease-in-out delay-10 hover:-translate-y-0.5 hover:scale-105 duration-300 hover:shadow-xl'
           >
             <IconBrandInstagram size={24} />
           </ActionIcon>
@@ -162,6 +165,7 @@ export function HeaderTemplate({ links }: HeaderActionProps) {
             variant="subtle"
             color='blue.3'
             title="Adithya Chandrasekar's LinkedIn"
+            className='transition ease-in-out delay-10 hover:-translate-y-0.5 hover:scale-105 duration-300 hover:shadow-xl'
           >
             <IconBrandLinkedin size={24} />
           </ActionIcon>
@@ -170,6 +174,7 @@ export function HeaderTemplate({ links }: HeaderActionProps) {
             color={dark ? 'yellow' : 'violet.9'}
             onClick={() => toggleColorScheme()}
             title="Toggle color scheme"
+            className='transition ease-in-out sm:delay-10 sm:hover:-translate-y-0.5 sm:hover:scale-105 duration-300 sm:hover:shadow-xl'
           >
             {dark ? <IconSun size={18} /> : <IconMoonStars size={18} />}
           </ActionIcon>
