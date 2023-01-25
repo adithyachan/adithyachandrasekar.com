@@ -12,12 +12,12 @@ const useStyles = createStyles((theme) => ({
 export default function HeroContentLeft() {
   const { classes } = useStyles();
   const theme = useMantineTheme()
-  const darkBG = 'https://lh3.googleusercontent.com/pw/AMWts8Cvoz9UjrBHGA9PWXtWx0uz-dsd2SJhQseSJXf0LLX44lUGcfr-7USzsOEf7reZEWpVUlRyg-V916A0zjTUoHEGkbF8E_fUnvQNE70cTPfapj8vqLbIBE3jZpITJHlsUbSSZjw64BiR4JvCyrtxQC6wmw=w2056-h1398-no?authuser=0'
+  const darkBG = 'https://lh3.googleusercontent.com/LNJVm2dmmToLHXqlo0zF5xcV4ErZD-s_lUHoi-_J8HyhaMycaJeRgTUdrMH1D9IFLJNsH4qW9nJxwchdX7H6btavqIHIdJY-o2kfzz5-H-F6XkfTGl-lJJ4hijGCoPkmf9K8krS06pQ=w2400'
 
   return (
     <BackgroundImage 
       className="relative" 
-      src={darkBG}
+      src="/bg.jpg"
     >
       <Overlay
         gradient="linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, .65) 70%)"

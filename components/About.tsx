@@ -41,7 +41,7 @@ export default function About() {
             <Card shadow="sm" w={375} p="lg" radius="md" className="transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-105 duration-300 hover:shadow-xl" withBorder>
               <Card.Section>
                 <Image
-                  src="https://www.securityindustry.org/wp-content/uploads/2020/12/TIME-mentor-2.jpg"
+                  src="https://images.squarespace-cdn.com/content/v1/63a9be6e13a1ad2ae879ed5a/1672068756603-SB1P30K3ECXROFR00JQO/Group+Photo.jpg?format=1000w"
                   height={160}
                   alt="Mentorship"
                   withPlaceholder

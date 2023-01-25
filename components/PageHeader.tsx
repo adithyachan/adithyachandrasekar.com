@@ -126,7 +126,7 @@ export function HeaderTemplate({ links }: HeaderActionProps) {
   const idle = useIdle(1000);
 
   return (
-    <Header height="" p="md" className={`shadow-lg transition ease-in-out sm:hover:opacity-100 sm:hover:shadow-2xl ${scroll.y > 150 && !idle ? "opacity-90" : "opacity-0"} duration-500`} fixed>
+    <Header height="" p="md" className={`sm:hover:blur-none shadow-lg transition ease-in-out sm:hover:opacity-100 sm:hover:shadow-2xl ${scroll.y > 150 && !idle ? "opacity-90" : "opacity-0 blur-md"} duration-500`} fixed>
       <Container className="flex justify-between items-center" fluid>
         <Group className="pl-5">
           <Group>
