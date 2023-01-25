@@ -13,7 +13,7 @@ import {
   Stack,
   Divider,
 } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
+import { useDisclosure, useScrollIntoView } from '@mantine/hooks';
 import { IconChevronDown, IconSun, IconMoonStars, IconBrandGithub, IconBrandInstagram, IconBrandLinkedin } from '@tabler/icons';
 
 const useStyles = createStyles((theme) => ({
@@ -125,9 +125,9 @@ export function HeaderTemplate({ links }: HeaderActionProps) {
   const dark = colorScheme === 'dark';
 
   return (
-    <Header height="" p="md" opacity={opened ? 1 : 0.8}>
+    <Header height="" p="md" opacity={opened ? 1 : 0.9} className="sm:hover:opacity-100 shadow-lg transition ease-in-out sm:hover:scale-105 sm:hover:shadow-2xl" fixed>
       <Container className="flex justify-between items-center" fluid>
-        <Group>
+        <Group className="pl-5">
           <Group>
             <Burger opened={opened} onClick={toggle} className={classes.burger} size="sm" />
           </Group>
@@ -135,14 +135,13 @@ export function HeaderTemplate({ links }: HeaderActionProps) {
             { items }
           </Group>
         </Group>
-        <Group>
+        <Group className="pr-5">
           <ActionIcon
             component='a'
             href='https://github.com/adithyachan'
             target="_blank"
             variant="subtle"
-            color='dark'
-            title="Adithya Chandrasekar's Instagram"
+            title="Adithya Chandrasekar's Github"
           >
             <IconBrandGithub size={24} />
           </ActionIcon>
@@ -179,7 +178,9 @@ export function HeaderTemplate({ links }: HeaderActionProps) {
       <Stack>
         <MediaQuery largerThan="sm" styles={{ display: "none"}}>
           <Collapse in={opened}>
-            { burgerItems }
+            <Stack>
+              { burgerItems }
+            </Stack>
           </Collapse>
         </MediaQuery>
       </Stack>
@@ -188,10 +189,8 @@ export function HeaderTemplate({ links }: HeaderActionProps) {
 }
 
 export default function PageHeader() {
-  const header_links = [{
-     link: "About", label: "About" 
-    }, {
-      link: "https://adithyachandrasekar.com", label: "Blog",
+  const header_links = [ {
+      link: "#", label: "Blog",
     }, {
       link: "https://github.com/adithyachan", label: "Projects",
     },
