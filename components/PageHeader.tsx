@@ -113,7 +113,7 @@ export function HeaderTemplate({ links }: HeaderActionProps) {
         key={link.label}
         href={link.link}
         target="_blank"
-        className={classes.link}
+        className={`py-3 ${classes.link}`}
         onClick={link.link ? () => {} : (event) => event.preventDefault()}
       >
         {link.label}
@@ -178,7 +178,7 @@ export function HeaderTemplate({ links }: HeaderActionProps) {
       <Stack>
         <MediaQuery largerThan="sm" styles={{ display: "none"}}>
           <Collapse in={opened}>
-            <Stack>
+            <Stack mt="xs">
               { burgerItems }
             </Stack>
           </Collapse>
