@@ -51,7 +51,7 @@ export default function About() {
                 <Text weight={500}>Leadership</Text>
               </Group>
               <Text size="sm" color="dimmed">
-                Adithya is Director of Engagements for Purdue Solutions Consulting, where he spearheads project acquisition and oversees the conception of new projects. Adithya also leads Software Saturdays, a free course covering different software frameworks every week.
+                Adithya is Director of Engagements for Purdue Solutions Consulting, where he spearheads project acquisition and oversees the conception of new projects. Adithya also leads Software Saturdays, a free course covering different software frameworks every semester.
               </Text>
             </Card>
           </Flex>
