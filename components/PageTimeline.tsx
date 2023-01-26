@@ -13,7 +13,7 @@ export default function PageTimeline() {
       </Stack>
       <Timeline active={3} bulletSize={40} lineWidth={3} align="right" mt="lg">
         <Timeline.Item bullet={<IconSchool size={20} />} title="Purdue University">
-          <Text color="dimmed" size="sm">Began Computer Science Progam</Text>
+          <Text color="dimmed" size="sm">Began Computer Science Program</Text>
           <Text size="xs" mt={4}>May 2021</Text>
         </Timeline.Item>
 

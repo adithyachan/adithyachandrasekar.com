@@ -19,7 +19,7 @@ export default function About() {
                 <Text weight={500}>College Sophomore</Text>
               </Group>
               <Text size="sm" color="dimmed">
-                Adithya is a Computer Science & Data Science major at Purdue University. He has a strong interest in Technical Management Leadership, Data Analytics, and Consulting.
+                Adithya is a Computer Science & Data Science major at Purdue University. He has a strong interest in Technical Management Leadership, Data Analytics, and Consulting. He is planning to graduate in 2024 with a degree in Computer Science with concentrations in AI/ML, Software Engineering, and Security, and with a degree in Data Science with a concentration in CS.
               </Text>
             </Card>
             <Card shadow="sm" p="lg" w={375} radius="md" className="transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-105 duration-300 hover:shadow-xl" withBorder>
@@ -35,7 +35,7 @@ export default function About() {
                 <Text weight={500}>Software Developer</Text>
               </Group>
               <Text size="sm" color="dimmed">
-                As many Computer Science majors are, Adithya is also an avid software developer in his spare time. He enjoys working on his personal projects and learning new technical frameworks in his spare time.
+                As many Computer Science majors are, Adithya is also an avid software developer in his spare time. He enjoys working on his personal projects and learning new technical frameworks. In fact, this website was one of those projects!
               </Text>
             </Card>
             <Card shadow="sm" w={375} p="lg" radius="md" className="transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-105 duration-300 hover:shadow-xl" withBorder>
@@ -51,7 +51,7 @@ export default function About() {
                 <Text weight={500}>Leadership</Text>
               </Group>
               <Text size="sm" color="dimmed">
-                Adithya leads many organizations within Purdue University. He is Director of Engagements for Purdue Solutions Consulting, where he spearheads project acquisition and oversees the conception of new projects.
+                Adithya is Director of Engagements for Purdue Solutions Consulting, where he spearheads project acquisition and oversees the conception of new projects. Adithya also leads Software Saturdays, a free course covering different software frameworks every semester.
               </Text>
             </Card>
           </Flex>
