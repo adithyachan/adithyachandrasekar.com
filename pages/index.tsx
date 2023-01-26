@@ -7,6 +7,7 @@ import PageFooter from '../components/PageFooter'
 
 import Hero from '../components/Hero'
 import About from '../components/About'
+import PageTimeline from '../components/PageTimeline'
 
 
 
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
         <AppShell padding={0} header={<PageHeader />} footer={<PageFooter />}>
           <Hero />
           <About />
+          <PageTimeline />
         </AppShell>
       </main>
     </>
