@@ -35,7 +35,7 @@ export default function About() {
                 <Text weight={500}>Software Developer</Text>
               </Group>
               <Text size="sm" color="dimmed">
-                As many Computer Science majors are, Adithya is also an avid software developer in his spare time. He enjoys working on his personal projects and learning new technical frameworks. In fact, this webiste was one of those projects!
+                As many Computer Science majors are, Adithya is also an avid software developer in his spare time. He enjoys working on his personal projects and learning new technical frameworks. In fact, this website was one of those projects!
               </Text>
             </Card>
             <Card shadow="sm" w={375} p="lg" radius="md" className="transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-105 duration-300 hover:shadow-xl" withBorder>
