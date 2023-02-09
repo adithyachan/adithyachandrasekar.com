@@ -26,9 +26,6 @@ export default function HeroContentLeft() {
       />
       <Container className={`relative flex-col justify-center items-start z-10 pl-10 pt-72 ${classes.container}`} fluid>
         <Title className="text-white text-4xl md:text-6xl font-black">Adithya Chandrasekar</Title>
-        <Text className="text-white max-w-full text-sm md:max-w-xl md:text-lg" size="xl" mt="xl">
-          Student, Developer, Leader
-        </Text>
       </Container>
     </BackgroundImage>
   );

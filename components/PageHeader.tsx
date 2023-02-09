@@ -195,7 +195,7 @@ export function HeaderTemplate({ links }: HeaderActionProps) {
 
 export default function PageHeader() {
   const header_links = [ {
-      link: "#", label: "Blog",
+      link: "#", label: "Blog (Coming Soon!)",
     }, {
       link: "https://github.com/adithyachan", label: "Projects",
     },
