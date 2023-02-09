@@ -19,7 +19,7 @@ export default function About() {
                 <Text weight={500}>College Sophomore</Text>
               </Group>
               <Text size="sm" color="dimmed">
-                Adithya is a Computer Science & Data Science major at Purdue University. He has a strong interest in Technical Management Leadership, Data Analytics, and Consulting. He is planning to graduate in 2024 with a degree in Computer Science with concentrations in AI/ML, Software Engineering, and Security, and with a degree in Data Science with a concentration in CS.
+                Adithya is a Computer Science & Data Science major at Purdue University. He has a strong interest in Technical Management Leadership, Data Analytics, and Consulting. He is planning to graduate in 2024 with a degree in Computer Science with concentrations in AI/ML, Software Engineering, and Security, and with a degree in Data Science.
               </Text>
             </Card>
             <Card shadow="sm" p="lg" w={375} radius="md" className="transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-105 duration-300 hover:shadow-xl" withBorder>
