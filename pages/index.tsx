@@ -8,7 +8,7 @@ import PageFooter from '../components/PageFooter'
 import Hero from '../components/Hero'
 import About from '../components/About'
 import PageTimeline from '../components/PageTimeline'
-import Stats from '../components/Stats'
+// import Stats from '../components/Stats'
 
 import useSWR from "swr"
 import { GraphQLClient } from 'graphql-request'
