@@ -16,10 +16,10 @@ export default function About() {
                 />
               </Card.Section>
               <Group position="apart" mt="md" mb="xs">
-                <Text weight={500}>College Sophomore</Text>
+                <Text weight={500}>Undergraduate Student</Text>
               </Group>
               <Text size="sm" color="dimmed">
-                Adithya is a Computer Science & Data Science major at Purdue University. He has a strong interest in Technical Management Leadership, Data Analytics, and Consulting. He is planning to graduate in 2024 with degrees in Computer Science & Data Science with concentrations in AI/ML, Software Engineering, and Security.
+                Adithya is a Computer Science & Data Science major at Purdue University. He has a strong interest in Technical Management Leadership, Data Analytics, and Consulting. He is planning to graduate in 2024 with degrees in Computer Science & Data Science with concentrations in AI/ML and Software Engineering.
               </Text>
             </Card>
             <Card shadow="sm" p="lg" w={375} radius="lg" className="transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-105 duration-300 hover:shadow-xl" withBorder>
