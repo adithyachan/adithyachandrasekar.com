@@ -1,3 +1,4 @@
+// DEPRECATED
 import { Timeline, Text, Container, Title, Flex, Blockquote, Stack, Paper } from "@mantine/core";
 import { IconSchool, IconBriefcase, IconBuildingSkyscraper, IconBuildingArch, IconDeviceLaptop } from "@tabler/icons";
 export default function PageTimeline() {
