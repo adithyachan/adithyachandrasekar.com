@@ -10,5 +10,5 @@
 - Blog
 
 #### TODOs:
-- [ ] Create Basic Next Blog App
+- [X] Create Basic Next Page
 - [ ] Update Experience and Bio
