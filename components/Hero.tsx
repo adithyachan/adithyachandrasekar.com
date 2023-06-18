@@ -22,14 +22,14 @@ export default function Hero(props: { scroll: any }) {
         <Flex className='flex-col h-full justify-between'>
           <span></span>
           <TypeAnimation
-            sequence={["Hi, I'm Adithya"]}
+            sequence={["Hi!", 700, "Hi! I'm Adithya"]}
             wrapper="span"
             speed={50}
-            repeat={1}
+            repeat={0}
             className="text-white text-4xl md:text-6xl font-black"
           />
           <Center className={`self-center`}>
-            <ActionIcon variant='transparent' color="gray" onClick={() => props.scroll({ alignment: "center" })} className={`${scroll.y > 150 ? "hidden" : ""}`}>
+            <ActionIcon variant='transparent' color="gray" onClick={() => props.scroll({ alignment: "center" })} className={`${scroll.y > 150 ? "opacity-0" : ""}`} disabled={scroll.y > 150}>
               <IconChevronDown/>
             </ActionIcon>
           </Center>
