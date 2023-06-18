@@ -1,18 +1,12 @@
-import { createStyles, Overlay, Container, Title, Button, Text, BackgroundImage, useMantineTheme, Flex } from '@mantine/core';
+import { createStyles, Overlay, Container, Title, Button, Text, BackgroundImage, useMantineTheme, Flex, ActionIcon, Center } from '@mantine/core';
+import { useWindowScroll, useScrollIntoView } from '@mantine/hooks';
 import { TypeAnimation } from 'react-type-animation'
+import { IconChevronDown } from '@tabler/icons';
 
-const useStyles = createStyles((theme) => ({
-  container: {
-    height: 600,
-    [theme.fn.largerThan('md')]: {
-      height: 800,
-    },
-  },
-}));
-
-export default function HeroContentLeft() {
-  const { classes } = useStyles();
+export default function Hero(props: { scroll: any }) {
   const theme = useMantineTheme()
+  const [scroll, scrollTo] = useWindowScroll();
+  
 
   return (
     <BackgroundImage 
@@ -24,17 +18,23 @@ export default function HeroContentLeft() {
         opacity={1}
         zIndex={0}
       />
-      <Container className={`relative flex-col justify-center items-start z-10 ${classes.container}`} fluid>
-        <Flex align="center" className='h-full'>
+      <Container className={`relative flex-col justify-center items-start z-10 h-screen`} fluid>
+        <Flex className='flex-col h-full justify-between'>
+          <span></span>
           <TypeAnimation
-            sequence={["Adithya Chandrasekar"]}
+            sequence={["Hi, I'm Adithya"]}
             wrapper="span"
             speed={50}
             repeat={1}
             className="text-white text-4xl md:text-6xl font-black"
           />
+          <Center className={`self-center`}>
+            <ActionIcon variant='transparent' color="gray" onClick={() => props.scroll({ alignment: "center" })} className={`${scroll.y > 150 ? "hidden" : ""}`}>
+              <IconChevronDown/>
+            </ActionIcon>
+          </Center>
+          
         </Flex>
-        
       </Container>
     </BackgroundImage>
   );

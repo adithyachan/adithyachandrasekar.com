@@ -1,10 +1,10 @@
 import { Container, Center, Title, Flex, Text, Card, Image, Group, Grid, Paper } from "@mantine/core";
 
-export default function Education() {
+export default function Education(props: { scrollTarget: any }) {
   return (
     <Container className="mt-20 mb-40 mx-40" fluid>
       <Center className="flex-col">
-        <Title className="text-6xl">Education 🎓</Title>
+        <Title className="text-6xl" ref={props.scrollTarget}>Education 🎓</Title>
         <Grid className="mt-20">
           <Grid.Col span={6}>
             <Image
