@@ -99,7 +99,7 @@ export default function Education(props: { scrollTarget: any }) {
                 </List>
               </Grid.Col>
               <Grid.Col span={4}>
-                <Title order={4}>Fall 2023 (in progress)</Title>
+                <Title order={4}>Fall 2023</Title>
                 <List type="unordered" size="sm">
                   <List.Item>CS502: Compilers</List.Item>
                   <List.Item>CS481: Artifcial Intelligence</List.Item>
@@ -109,7 +109,7 @@ export default function Education(props: { scrollTarget: any }) {
                 </List>
               </Grid.Col>
               <Grid.Col span={4}>
-                <Title order={4}>Spring 2024 (expected)</Title>
+                <Title order={4}>Spring 2024</Title>
                 <List type="unordered" size="sm">
                   <List.Item>CS580: Algorithms</List.Item>
                   <List.Item>CS590: VR/AR</List.Item>
