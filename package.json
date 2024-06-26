@@ -30,6 +30,7 @@
     "dayjs": "^1.11.7",
     "dotenv": "^16.0.3",
     "embla-carousel-react": "^7.0.7",
+    "framer-motion": "^11.2.12",
     "graphql-request": "^5.1.0",
     "next": "latest",
     "react": "18.2.0",
