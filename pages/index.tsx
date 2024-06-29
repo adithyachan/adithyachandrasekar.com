@@ -4,9 +4,9 @@ import Head from 'next/head'
 import { AppShell } from '@mantine/core'
 import { useScrollIntoView } from '@mantine/hooks'
 
-import PageFooter from '../components/PageFooter'
-import Hero from '../components/Hero'
-import Education from '../components/Education'
+import PageFooter from '@/components/PageFooter'
+import Hero from '@/components/Hero'
+import Education from '@/components/Education'
 
 const Home: NextPage = () => {
   const { scrollIntoView, targetRef } = useScrollIntoView<HTMLDivElement>();
