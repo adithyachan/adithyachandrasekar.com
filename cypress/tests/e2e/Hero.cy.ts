@@ -49,3 +49,5 @@ describe("Hero Component E2E", () => {
       .should("not.have.class", "opacity-0");
   });
 });
+
+export {};
