@@ -1,9 +1,9 @@
-name: Pre-Merge Checks
-
+name: CI
+run-name: ${{ github.action }} - ${{ github.ref_type}} ${{ github.ref_name }} - ${{ github.sha }}
 on: [pull_request, push]
 
 jobs:
-  run-tests:
+  CI:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
@@ -12,8 +12,6 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
-      - name: Start Server
-        run: npm start
       - name: Unit Tests
         uses: cypress-io/github-action@v6
         with:
@@ -21,6 +19,7 @@ jobs:
       - name: E2E Tests
         uses: cypress-io/github-action@v6
         with:
+          start: npm start -p 3030
           install: false
       - name: ESLint
         run: npm run lint
