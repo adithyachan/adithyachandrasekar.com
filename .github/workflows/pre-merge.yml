@@ -1,0 +1,26 @@
+name: Pre-Merge Checks
+
+on: pull_request
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4 
+      - name: Build
+        run: npm run build
+      - name: Start Server
+        run: npm start
+      - name: Unit Tests
+        uses: cypress-io/github-action@v6
+        with:
+          component: true
+      - name: E2E Tests
+        uses: cypress-io/github-action@v6
+        with:
+          install: false
+      - name: ESLint
+        run: npm run lint
+      - name: Prettier
+        run: npm run format
