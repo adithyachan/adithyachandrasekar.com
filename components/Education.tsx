@@ -1,4 +1,13 @@
-import { Container, Center, Title, Flex, Text, Card, Image, Group, Grid, Paper, Timeline, List } from "@mantine/core";
+import {
+  Container,
+  Center,
+  Title,
+  Flex,
+  Image,
+  Grid,
+  Timeline,
+  List,
+} from "@mantine/core";
 import { IconCheck } from "@tabler/icons";
 
 export default function Education(props: { scrollTarget: any }) {
@@ -6,7 +15,9 @@ export default function Education(props: { scrollTarget: any }) {
     <Container className="mt-20 mb-40 mx-40" fluid>
       <Center className="flex-col">
         <Flex justify="center" align="center" className="space-x-5">
-          <Title className="text-6xl" ref={props.scrollTarget}>Education 🎓</Title>
+          <Title className="text-6xl" ref={props.scrollTarget}>
+            Education 🎓
+          </Title>
         </Flex>
         <Grid className="mt-20 w-full">
           <Grid.Col span={6}>
@@ -19,7 +30,7 @@ export default function Education(props: { scrollTarget: any }) {
               />
               <Center>
                 <Timeline color="gray" bulletSize={30}>
-                  <Timeline.Item 
+                  <Timeline.Item
                     title="Joined Purdue University"
                     bullet={<IconCheck />}
                     active
@@ -40,14 +51,10 @@ export default function Education(props: { scrollTarget: any }) {
                   >
                     <small>May 2023</small>
                   </Timeline.Item>
-                  <Timeline.Item
-                    title="BS Graduation"
-                  >
+                  <Timeline.Item title="BS Graduation">
                     <small>May 2024</small>
                   </Timeline.Item>
-                  <Timeline.Item
-                    title="MS Graduation"
-                  >
+                  <Timeline.Item title="MS Graduation">
                     <small>May 2025</small>
                   </Timeline.Item>
                 </Timeline>
@@ -56,7 +63,9 @@ export default function Education(props: { scrollTarget: any }) {
           </Grid.Col>
           <Grid.Col span={6}>
             <Title order={3}>Relevant Courses</Title>
-            <small className="italic">(Note: 500 level classes refer to post-graduate courses)</small>
+            <small className="italic">
+              (Note: 500 level classes refer to post-graduate courses)
+            </small>
             <Grid className="m-3">
               <Grid.Col span={4}>
                 <Title order={4}>Fall 2021</Title>

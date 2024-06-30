@@ -5,11 +5,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "start-test": "next start -p 3030 1> /dev/null &",
+    "lint": "next lint --fix",
     "unit": "cypress run --component --headless",
     "e2e": "cypress run --e2e --headless",
-    "test": "npm run unit; npm run e2e", 
-    "cypress:open": "cypress open"
+    "test": "npm start-test; trap 'kill $(lsof -n -i :3030  | grep LISTEN | awk '{print $2}')' EXIT; npm run unit; npm run e2e",
+    "cypress:open": "cypress open",
+    "format": "prettier --write --ignore-unknown .",
+    "prepare": "husky"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
@@ -47,11 +50,19 @@
     "@types/node": "18.11.3",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
+    "@typescript-eslint/parser": "^7.14.1",
     "autoprefixer": "^10.4.12",
     "cypress": "^13.12.0",
     "eslint": "8.57.0",
     "eslint-config-next": "14.2.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-unused-imports": "^3.2.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.7",
     "postcss": "^8.4.18",
+    "prettier": "^3.3.2",
     "tailwindcss": "^3.2.4",
     "typescript": "4.9.4"
   }

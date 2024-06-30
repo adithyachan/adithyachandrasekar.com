@@ -1,10 +1,10 @@
-import React from 'react'
-import Hero from '@components/Hero'
+import React from "react";
+import Hero from "@components/Hero";
 
-describe('<Hero />', () => {
-  it('renders', () => {
-    cy.mount(<Hero scroll={null} />)
-  })
-})
+describe("<Hero />", () => {
+  it("renders", () => {
+    cy.mount(<Hero scroll={null} />);
+  });
+});
 
-export {}
+export {};

@@ -21,9 +21,14 @@
       "@components": ["./components"],
       "@components/*": ["./components/*"],
       "@tests": ["./cypress/tests"],
-      "@tests/*": ["./cypress/tests/*"],
+      "@tests/*": ["./cypress/tests/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "node_modules/Index.cy.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "node_modules/Index.cy.tsx"
+  ],
   "exclude": ["node_modules"]
 }
