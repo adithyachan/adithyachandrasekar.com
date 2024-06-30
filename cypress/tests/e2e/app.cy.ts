@@ -1,7 +1,7 @@
 describe("Visit Landing", () => {
-  it ("passes", () => {
-    cy.visit("/")
-  })
-})
+  it("passes", () => {
+    cy.visit("/");
+  });
+});
 
-export {}
+export {};
