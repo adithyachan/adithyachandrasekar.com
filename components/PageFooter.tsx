@@ -4,13 +4,14 @@ import { IconSun, IconMoonStars, IconBrandGithub, IconBrandInstagram, IconBrandL
 
 export default function PageFooter() {
   const [scroll, scrollTo] = useWindowScroll();
+  const { height, width } = useViewportSize();
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
 
   const idle = useIdle(1000);
   const dark = colorScheme === 'dark';
 
   return (
-    <Footer height="" className={`transition ease-in-out ${scroll.y > 150 && !idle ? "opacity-100" : "hidden blur-md"} duration-500`}>
+    <Footer height="" className={`sm:hover:blur-none transition ease-in-out sm:hover:opacity-100 ${scroll.y > 150 && !idle ? "opacity-90" : "opacity-0 blur-md"} duration-500`}>
       <Grid className="py-1">
         <Grid.Col span={3}>
           <Flex className='pl-5 h-full' align="center">
