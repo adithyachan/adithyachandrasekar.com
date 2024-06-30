@@ -13,7 +13,7 @@ jobs:
       - name: Build
         run: npm run build
       - name: Start Server
-        run: npx next start -p 3030
+        run: npm run start-test
       - name: Unit Tests
         uses: cypress-io/github-action@v6
         with:
