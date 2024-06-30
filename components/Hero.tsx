@@ -17,18 +17,18 @@ export default function Hero(props: { scroll: any }) {
   const [scroll, _] = useWindowScroll();
 
   return (
-    <BackgroundImage className="relative" src="/bg.jpg">
+    <BackgroundImage className="relative" src="/bg.jpg" id="hero-bg-img">
       <Overlay
         gradient="linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, .75) 70%)"
         opacity={1}
         zIndex={0}
+        id="hero-img-overlay"
       />
       <Container
         className={`relative flex-col justify-center items-start z-10 h-screen`}
-        fluid
       >
         <Flex className="flex-col h-full justify-between">
-          <span></span>
+          <span id="buffer" />
           <TypeAnimation
             sequence={["Hi,", 700, "Hi, I'm Adithya."]}
             wrapper="span"
@@ -45,7 +45,11 @@ export default function Hero(props: { scroll: any }) {
             <Center
               className={`self-center flex-col ${scroll.y > 150 ? "opacity-0" : ""}`}
             >
-              <Title size="lg" color="white">{`Let's get started`}</Title>
+              <Title
+                size="lg"
+                color="white"
+                id="hero-scroll-button-text"
+              >{`Let's get started`}</Title>
               <ActionIcon
                 variant="transparent"
                 color="gray"
@@ -53,6 +57,7 @@ export default function Hero(props: { scroll: any }) {
                 disabled={scroll.y > 150}
                 size="xl"
                 mb="xl"
+                id="hero-scroll-button"
               >
                 <IconChevronDown size={48} />
               </ActionIcon>
