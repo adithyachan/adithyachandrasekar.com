@@ -6,3 +6,5 @@ describe('<Hero />', () => {
     cy.mount(<Hero scroll={null} />)
   })
 })
+
+export {}
