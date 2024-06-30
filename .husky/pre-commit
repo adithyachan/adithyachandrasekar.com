@@ -1,0 +1,10 @@
+npx lint-staged
+
+npm run build
+npx next start -p 3030 &
+server_pid=$!
+
+npm run test
+
+kill $server_pid
+

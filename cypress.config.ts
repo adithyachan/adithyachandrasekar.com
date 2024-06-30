@@ -2,9 +2,9 @@ import { defineConfig } from "cypress";
 
 export default defineConfig({
   e2e: {
-    setupNodeEvents(on, config) {},
-    baseUrl: "http://localhost:3000",
-    specPattern: "cypress/tests/e2e/**/*.cy.{js,jsx,ts,tsx}"
+    setupNodeEvents(_, __) {},
+    baseUrl: "http://localhost:3030",
+    specPattern: "cypress/tests/e2e/**/*.cy.{js,jsx,ts,tsx}",
   },
 
   component: {
@@ -12,6 +12,6 @@ export default defineConfig({
       framework: "next",
       bundler: "webpack",
     },
-    specPattern: "cypress/tests/unit/**/*.cy.{js,jsx,ts,tsx}"
+    specPattern: "cypress/tests/unit/**/*.cy.{js,jsx,ts,tsx}",
   },
 });

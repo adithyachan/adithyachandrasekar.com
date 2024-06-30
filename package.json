@@ -10,7 +10,8 @@
     "e2e": "cypress run --e2e --headless",
     "test": "npm run unit; npm run e2e",
     "cypress:open": "cypress open",
-    "format": "prettier --write pages components cypress/tests/**/*.cy.*"
+    "format": "prettier --write pages components cypress/tests/**/*.cy.*",
+    "prepare": "husky"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
@@ -58,6 +59,7 @@
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-unused-imports": "^3.2.0",
     "husky": "^9.0.11",
+    "lint-staged": "^15.2.7",
     "postcss": "^8.4.18",
     "prettier": "^3.3.2",
     "tailwindcss": "^3.2.4",
