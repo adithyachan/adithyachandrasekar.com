@@ -3,3 +3,5 @@ describe("Visit Landing", () => {
     cy.visit("/")
   })
 })
+
+export {}
