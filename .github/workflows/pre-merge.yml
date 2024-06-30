@@ -1,6 +1,6 @@
 name: CI
 run-name: ${{ github.ref_type}} ${{ github.ref_name }} - ${{ github.sha }}
-on: [pull_request, push]
+on: [push]
 
 jobs:
   CI:
