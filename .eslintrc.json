@@ -1,15 +1,22 @@
 {
-  "extends": ["next/core-web-vitals", "eslint:recommended", "prettier", "plugin:import/recommended"],
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "prettier",
+    "plugin:import/recommended"
+  ],
   // Using the unused imports package to autofix unused imports
   "plugins": ["unused-imports", "import"],
   "rules": {
     "unused-imports/no-unused-imports": "error",
     "no-unused-vars": [
-      "error", {
+      "error",
+      {
         "varsIgnorePattern": "^_",
         "argsIgnorePattern": "^_"
       }
-    ]
+    ],
+    "no-undef": ["warn"]
   },
   "settings": {
     "import/resolver": {

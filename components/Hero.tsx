@@ -42,9 +42,18 @@ export default function Hero(props: { scroll: any }) {
               y: [null, -10],
             }}
           >
-            <Center className={`self-center flex-col ${scroll.y > 150 ? "opacity-0" : ""}`} >
-              <Title size="lg" color='white'>{`Let's get started`}</Title>
-              <ActionIcon variant='transparent' color="gray" onClick={() => props.scroll()} disabled={scroll.y > 150} size="xl" mb="xl">
+            <Center
+              className={`self-center flex-col ${scroll.y > 150 ? "opacity-0" : ""}`}
+            >
+              <Title size="lg" color="white">{`Let's get started`}</Title>
+              <ActionIcon
+                variant="transparent"
+                color="gray"
+                onClick={() => props.scroll()}
+                disabled={scroll.y > 150}
+                size="xl"
+                mb="xl"
+              >
                 <IconChevronDown size={48} />
               </ActionIcon>
             </Center>
