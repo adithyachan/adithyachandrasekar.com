@@ -1,4 +1,4 @@
-describe("Visit Landing", () => {
+describe("Smoke", () => {
   it("passes", () => {
     cy.visit("/");
   });
