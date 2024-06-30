@@ -11,7 +11,7 @@
     "e2e": "cypress run --e2e --headless",
     "test": "npm start-test; trap 'kill $(lsof -n -i :3030  | grep LISTEN | awk '{print $2}')' EXIT; npm run unit; npm run e2e",
     "cypress:open": "cypress open",
-    "format": "prettier --write pages components cypress/tests/**/*.cy.*",
+    "format": "prettier --write --ignore-unknown .",
     "prepare": "husky"
   },
   "dependencies": {
